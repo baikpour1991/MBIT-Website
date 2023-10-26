@@ -1,0 +1,136 @@
+.section {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 6vw;
+}
+
+.teamImage {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 0 15px 5px #111;
+}
+
+.teamMember {
+  width: 35%;
+}
+
+.teamMemberImage {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.teamMemberDetails {
+  width: 50%;
+  padding: 1vw;
+}
+
+.teamMemberHeader {
+  color: #5300ee;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.teamMemberName {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.teamMemberSummary {
+  line-height: 2rem;
+}
+
+.biographySection {
+  background-color: #fbfcfc;
+  padding-top: 2vw;
+}
+
+.biography {
+  width: 55%;
+  line-height: 2rem;
+}
+
+.biographyTitle {
+  font-size: 2rem;
+}
+
+.biographyText {
+  color: #333;
+}
+.skillsBox {
+  width: 35%;
+}
+
+.skillsHeader {
+  font-size: 1.8rem;
+}
+
+.notFound {
+  background-color: #fff;
+  box-shadow: 0 0 20px 5px #555;
+  border-radius: 25px;
+  box-sizing: border-box;
+  padding: 5vw;
+  text-align: center;
+  position: absolute;
+  width: 80%;
+  top: 20vw;
+  left: 10%;
+  font-weight: 700;
+  z-index: 40;
+}
+
+.Oops {
+  color: #ffa500;
+  font-size: 2.2rem;
+}
+
+.notFoundText {
+  color: #ff0000;
+}
+
+/*     Media Query       Max-width : 700px       */
+
+@media screen and (max-width: 700px) {
+  .section {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .teamMember {
+    width: 55%;
+  }
+
+  .teamMemberDetails {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5%;
+    font-size: 1.1rem;
+  }
+
+  .teamMemberHeader {
+    margin: 12px 0;
+    font-size: 1.5rem;
+  }
+
+  .biography {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5%;
+  }
+
+  .skillsBox {
+    width: 90%;
+  }
+}
+
+/*     Media Query       Max-width : 300px       */
+
+@media screen and (max-width: 300px) {
+  .notFound {
+    top: 35vw;
+  }
+}

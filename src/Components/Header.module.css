@@ -1,0 +1,49 @@
+.header {
+  position: relative;
+}
+
+.headerImage {
+  height: auto;
+  display: block;
+  width: 100%;
+}
+
+.navBar {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.slogan {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  color: white;
+  font-size: 2.2rem;
+}
+
+.slogan h1,
+h4,
+h6 {
+  margin: 3% 0;
+}
+
+/* Media Query         max-width:    850px     */
+
+@media screen and (max-width: 850px) {
+  .headerImage {
+    height: 100vw;
+  }
+  .slogan {
+    font-size: 4vw;
+  }
+}
+
+/* Media Query         max-width:    414px     */
+
+@media screen and (max-width: 414px) {
+  .slogan h6 {
+    font-size: 3.5vw;
+  }
+}

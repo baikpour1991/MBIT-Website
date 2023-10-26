@@ -1,0 +1,21 @@
+.skillPercentage {
+  position: absolute;
+  left: 96%;
+  transform: translateX(-50%);
+}
+
+.skillBar {
+  border: 1px solid #440be1;
+  margin-top: 9px;
+  padding: 0 1px;
+  height: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.skillBarFill {
+  width: 50%;
+  height: 4px;
+  background: linear-gradient(to right, #40038f, #7d34dd);
+}

@@ -1,0 +1,86 @@
+.servicesHeader {
+  text-align: center;
+  padding: 5% 1%;
+  color: #0a0a0a;
+}
+
+.servicesFirstTopic {
+  color: #8557f0;
+  font-weight: 500;
+  font-size: 100%;
+  background-color: #dbd6fc;
+  display: inline-block;
+  padding: 10px 35px;
+  border-radius: 50px;
+}
+
+.servicesTopic {
+  font-size: 220%;
+  margin: 0;
+}
+
+.servicesHolder {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1% 5%;
+}
+
+.services {
+  text-align: center;
+  margin: 1%;
+  padding: 2%;
+  color: #061340;
+  box-shadow: 0 2px 10px 1px #eeeeee93;
+  transition: 0.3s;
+  flex: 1;
+}
+
+.services:hover {
+  box-shadow: 0 2px 10px 1px #ddd;
+}
+
+.services p {
+  color: #707070;
+}
+
+.images {
+  width: 25%;
+  border-radius: 50%;
+  padding: 2%;
+  box-shadow: 0 10px 20px 1px #ccc;
+  transition: 0.3s;
+}
+
+.services:hover img {
+  box-shadow: 0 18px 20px 1px #ccc;
+}
+
+/* Media Query        max-width :    850px    */
+
+@media screen and (max-width: 850px) {
+  .servicesHolder {
+    flex-wrap: wrap;
+  }
+}
+
+/* Media Query        max-width :    600px    */
+
+@media screen and (max-width: 600px) {
+  .servicesHeader {
+    padding: 5% 5%;
+  }
+  .servicesHolder {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1% 5%;
+  }
+}
+
+/* Media Query        max-width :    414px    */
+
+@media screen and (max-width: 414px) {
+  .servicesHeader {
+    font-size: 0.8rem;
+  }
+}

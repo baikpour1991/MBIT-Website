@@ -1,0 +1,94 @@
+.teamSec {
+  background: url(../Pictures/UI/teamBack.png) #000060;
+  background-size: 100% 100%;
+  padding: 5vw 0;
+  color: white;
+  text-align: center;
+  margin: 4vw 0 0;
+}
+
+.teamHeader {
+  background-color: #8557f0;
+  display: inline-block;
+  padding: 12px 45px;
+  border-radius: 25px;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1rem;
+  margin: 0;
+}
+
+.teamHeader2 {
+  font-size: 2.2rem;
+  margin: 7px 0;
+}
+
+.teamSlider {
+  overflow: hidden;
+  position: relative;
+  padding: 0;
+}
+
+.teamSliedrContainer {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: auto;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  left: 0;
+  transition: 0.5s;
+}
+
+.galBtn {
+  font-size: 4.5vw;
+  position: absolute;
+  width: 8vw;
+  height: 16vw;
+  line-height: 14.6vw;
+  transition: 0.5s;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.sliderLeftButt {
+  left: -15vw;
+  top: 20%;
+  background: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='80.593px' height='122.88px' fill='%23fff' viewBox='0 0 80.593 122.88' enable-background='new 0 0 80.593 122.88' xml:space='preserve'%3E%3Cg%3E%3Cpolygon points='80.593,0 49.771,0 0,61.44 49.771,122.88 80.593,122.88 30.82,61.44 80.593,0'/%3E%3C/g%3E%3C/svg%3E")
+    no-repeat 50% 50%;
+  background-size: 6vw 11vw;
+}
+
+.sliderrightButt {
+  right: -15vw;
+  top: 20%;
+  background: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='80.593px' height='122.88px' fill='%23fff' viewBox='0 0 80.593 122.88' enable-background='new 0 0 80.593 122.88' xml:space='preserve'%3E%3Cg%3E%3Cpolygon points='0,0 30.82,0 80.593,61.44 30.82,122.88 0,122.88 49.772,61.44 0,0'/%3E%3C/g%3E%3C/svg%3E")
+    no-repeat 50% 50%;
+  background-size: 6vw 11vw;
+}
+
+.galBtn:hover {
+  transform: scale(1.35);
+  opacity: 1;
+}
+
+.teamSlider:hover .sliderLeftButt {
+  left: 0;
+}
+
+.teamSlider:hover .sliderrightButt {
+  right: 0;
+}
+
+/*                   min-width:        575px               */
+
+@media screen and (max-width: 575px) {
+  .sliderLeftButt {
+    left: 0;
+  }
+
+  .sliderrightButt {
+    right: 0;
+  }
+}
